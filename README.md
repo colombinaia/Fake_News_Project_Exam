@@ -30,3 +30,21 @@ Please ensure your directory looks exactly like this before running the code:
     ├── test.tsv                 # Used in the notebook for evaluation
     ├── train.tsv                
     └── valid.tsv
+```
+### Data Sources:
+1. **FakeNewsCorpus Sample:** Available at the [FakeNewsCorpus GitHub repository](https://raw.githubusercontent.com/several27/FakeNewsCorpus/master/news_sample.csv).
+2. **995K FakeNewsCorpus Subset:** Provided via the course Absalon page.
+3. **LIAR Dataset:** The official LIAR dataset distribution.
+
+## How to Run
+1. Clone or download this repository:
+   ```bash
+   git clone [https://github.com/colombinaia/Fake_News_Project_Exam.git](https://github.com/colombinaia/Fake_News_Project_Exam.git)
+   ```
+2. Create the `data/` and `liar_dataset/` folders and place the required files inside them as outlined above.
+3. Open `Fake_News_Project.ipynb` in Jupyter Notebook or JupyterLab.
+4. Select **Kernel > Restart & Run All** to execute the pipeline from start to finish.
+
+**Performance Note:** The notebook processes the 995K dataset in 50,000-row chunks to optimize memory usage. Running the full scaling experiment at the end of the notebook may take several minutes depending on your hardware.
+
+
